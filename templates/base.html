@@ -3,33 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project: 4nkush</title>
-    <link rel="stylesheet" href="style.css">
+    <title>{% block title %}Project: 4nkush{% endblock %}</title>
+    <link rel="stylesheet" href="{{ root_path }}style.css">
 </head>
 <body>
     <header>
-        <a href="/" class="logo-link" aria-label="Project: 4nkush home">
+        <a href="{{ root_path }}index.html" class="logo-link" aria-label="Project: 4nkush home">
             <svg class="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 40" width="248" height="40" role="img" aria-hidden="true">
                 <text x="124" y="30" text-anchor="middle" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="26">Project: 4nkush</text>
             </svg>
         </a>
         <nav>
-            <a href="/">Home</a>
-            <a href="/portfolio/portfolio.html">Portfolio</a>
-            <a href="/blog/">Blog</a>
-            <a href="/contact.html">Contact</a>
+            <a href="{{ root_path }}index.html">Home</a>
+            <a href="{{ root_path }}portfolio/portfolio.html">Portfolio</a>
+            <a href="{{ root_path }}blog/">Blog</a>
+            <a href="{{ root_path }}contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <section id="about">
-            <a href="/">About</a>
-        </section>
-        <section id="portfolio">
-            <a href="/portfolio/portfolio.html">Portfolio</a>
-        </section>
-        <section id="contact">
-            <a href="/contact.html">Contact me</a>
-        </section>
+        {% block content %}{% endblock %}
     </main>
     <footer>
         <p>Made by Ankush</p>

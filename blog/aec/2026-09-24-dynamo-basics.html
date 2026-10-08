@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Programming with Dynamo - Project: 4nkush</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="logo-link" aria-label="Project: 4nkush home">
+            <svg class="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 40" width="248" height="40" role="img" aria-hidden="true">
+                <text x="124" y="30" text-anchor="middle" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="26">Project: 4nkush</text>
+            </svg>
+        </a>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../portfolio/portfolio.html">Portfolio</a>
+            <a href="../../blog/">Blog</a>
+            <a href="../../contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        
+<article class="post">
+    <h1>Visual Programming with Dynamo</h1>
+    <p class="post-meta">
+        <time datetime="2026-09-24">
+            September 24, 2026
+        </time>
+        
+            <span class="post-category">aec</span>
+        
+    </p>
+    
+        <ul class="post-tags">
+            
+                <li>dynamo</li>
+            
+        </ul>
+    
+    <div class="post-body">
+        <h2>Why learn Dynamo?</h2>
+<p>I recently joined a MNC and was briefed about the projects that the BIM team is currently working on. On of it was a tunnel modelling project, where the team had to model the tunnel wall and the services (Civil, MEP) in Revit. The task was relatively easy, the services were in a group of families that the team simply had to copy and align with the tunnel wall axes. I quickly learned that the task is incredibly repetitive in nature, so I decided to take a look into copying elements in array along a path, but soon realised Revit simply doesn't have that option. The logic is sound, but the tool is missing, so I took a look at Dynamo and thus began the journey of satisfying my endless curiosity.</p>
+<h2>Visual Programming</h2>
+<h3>Back Story</h3>
+<p>I wanted to help my team somehow, so, after exploring the YouTube tutorials like <a href="https://www.youtube.com/watch?v=i7QRdJ9Qwhs">this</a>, and asking Claude and Gemini to understand scripting using Dynamo for this specific problem, I learned that it was entirely possible, but I would have to start from the basics. Why not? I love programming so, this could be a great opportunity to learn automation and help my team simultaneously. This is when I came across an great resource called <a href="https://primer.dynamobim.org/index.html">The Dynamo Primer</a>, which is an introductory guide to "Visual Programming" using Dynamo.</p>
+<p>This was the first time I learned about the term, "Visual Programming." After reading through the first chapter and understanding the example of origami crane, I realised the power of visual programming and the potential practical applications it holds for people who are not too deep into coding, but lean more towards, design.</p>
+<h2>What is Visual Programming?</h2>
+<p>Visual Programming, as I understand it, is a method of programming, in which a set of instructions are placed in a logical format, called algorithm, in order to achieve a desired goal. While text based programming (like Python, C++ etc) require writing the code for the computer to understand and execute, visual programming languages, like Dynamo, Grasshopper, Scratch, relies on visual logic arrangement using nodes, blocks and flowcharts. Visual programming basically bridges the gap between "visualizing" the logic and coding. Just like textual code have code block, visual programs have nodes, for the most common use cases.</p>
+<p>This concept opened up a whole different perspective of learning programming for me. Eager to discover more and hopefully create something useful.</p>
+<h2>Dynamo</h2>
+<p>Dynamo is an open-source software, that is used to visually script behaviour and design logic, for processing data or generate and interact with geometry. For me, dynamo is a tool to fast track the modelling process in my BIM workflow. Download it <a href="https://dynamobim.org/download/">here</a></p>
+<h3>Dynamo User Interface</h3>
+<p>Downloading and installing dynamo is the easy part, and I thought, like blender, it would have a complex UI that will take a long time to understand, but I was wrong. The UI is as simplistic as it can get. The standard - Menus, Toolbar; then a node library, workspace and execution bar. That's it. The Menus, Toolbar, Workspace and Execution bar were easy to understand so I skimmed through them. What I found interesting was the Library.</p>
+<h3>Library</h3>
+<p>Dynamo library is a neatly arranged list of Nodes (default as well as ones loaded from Revit), that is firstly, organized in a hierarchy with Libraries -&gt; Categories -&gt; Sub-Categories (where needed), based on whether the nodes CREATE, execute an ACTION or is used to QUERY data.</p>
+<p>I particularly find the part that a node can be categorized whether it creates a geometry, performs an action or extracts data. It simplifies the process significantly. Whenever a flow of logic is to be determined, I simply would have to contemplate on these three. This also opened up my mind a little.</p>
+<h2>Final thoughts for the day</h2>
+<p>Learning Dynamo is a step I took of my own accord in order to help out my team members. I only realised how interesting this topic actually is after I made my first circle using nodes. I have wanted to learn programming and now I can do it while helping others. Thanks Dynamo team.</p>
+    </div>
+</article>
+
+    </main>
+    <footer>
+        <p>Made by Ankush</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rankush/" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                    <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/project4nkush/" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                    <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/project4nkush" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
